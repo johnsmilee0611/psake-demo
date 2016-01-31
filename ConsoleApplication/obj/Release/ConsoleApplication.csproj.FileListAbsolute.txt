@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\RnDProjects\psake\.build\temp\ConsoleApplication.exe.config
+C:\Users\Administrator\Desktop\RnDProjects\psake\.build\temp\ConsoleApplication.exe
+C:\Users\Administrator\Desktop\RnDProjects\psake\.build\temp\ConsoleApplication.pdb
+C:\Users\Administrator\Desktop\RnDProjects\psake\ConsoleApplication\obj\Release\ConsoleApplication.exe
+C:\Users\Administrator\Desktop\RnDProjects\psake\ConsoleApplication\obj\Release\ConsoleApplication.pdb
+C:\Users\Administrator\Documents\GitHub\psake-demo\.build\temp\ConsoleApplication.exe.config
+C:\Users\Administrator\Documents\GitHub\psake-demo\.build\temp\ConsoleApplication.exe
+C:\Users\Administrator\Documents\GitHub\psake-demo\.build\temp\ConsoleApplication.pdb
+C:\Users\Administrator\Documents\GitHub\psake-demo\ConsoleApplication\obj\Release\ConsoleApplication.exe
+C:\Users\Administrator\Documents\GitHub\psake-demo\ConsoleApplication\obj\Release\ConsoleApplication.pdb

@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\RnDProjects\psake\.build\temp\Build.dll
+C:\Users\Administrator\Desktop\RnDProjects\psake\.build\temp\Build.pdb
+C:\Users\Administrator\Desktop\RnDProjects\psake\Build\obj\Release\Build.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\RnDProjects\psake\Build\obj\Release\Build.dll
+C:\Users\Administrator\Desktop\RnDProjects\psake\Build\obj\Release\Build.pdb
+C:\Users\Administrator\Documents\GitHub\psake-demo\.build\temp\Build.dll
+C:\Users\Administrator\Documents\GitHub\psake-demo\.build\temp\Build.pdb
+C:\Users\Administrator\Documents\GitHub\psake-demo\Build\obj\Release\Build.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\psake-demo\Build\obj\Release\Build.dll
+C:\Users\Administrator\Documents\GitHub\psake-demo\Build\obj\Release\Build.pdb
