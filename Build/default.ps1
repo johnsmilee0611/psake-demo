@@ -15,7 +15,7 @@ task Init -description "Initialises the build by removing previous artifacts and
     # Check that all tools are available
 	Write-Host "Checking that all required tools are available"
 
-	Assert (Test-Path $vsTestExe) "VSTest Console could not be found"
+	#Assert (Test-Path $vsTestExe) "VSTest Console could not be found"
 
 	# Remove previous build results
 	if (Test-Path $outputDirectory) {
