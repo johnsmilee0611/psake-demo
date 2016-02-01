@@ -1,4 +1,4 @@
-﻿Include ".\helpers.ps1"properties {  $testMessage = 'Executed Test!'  $compileMessage = 'Executed Compile!'  $cleanMessage = 'Executed Clean!'	$packagesPath = "$solutionDirectory\packages"	$solutionDirectory = (Get-Item $solutionFile).DirectoryName	$outputDirectory = "$solutionDirectory\.build"	$temporaryOutputDirectory = "$outputDirectory\temp"	$publishedMSTestDiretory = "$temporaryOutputDirectory\_PublishedMSTestTests"	$testResultsDirectory = "$outputDirectory\TestResults"	$MSTestResultDirectory = "$testResultsDirectory\MSTest"	$vsTestExe = (Get-ChildItem ("C:\Program Files (x86)\Microsoft Visual Studio*\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe")).FullName | Sort-Object $_ | select -last 1	$buildConfiguration = "Release"	$buildPlatform = "Any CPU"}
+﻿Include ".\helpers.ps1"properties {  $testMessage = 'Executed Test!'  $compileMessage = 'Executed Compile!'  $cleanMessage = 'Executed Clean!'	$packagesPath = "$solutionDirectory\packages"	$solutionDirectory = (Get-Item $solutionFile).DirectoryName	$outputDirectory = "$solutionDirectory\.build"	$temporaryOutputDirectory = "$outputDirectory\temp"	#$publishedMSTestDiretory = "$temporaryOutputDirectory\_PublishedMSTestTests"	#$testResultsDirectory = "$outputDirectory\TestResults"	#$MSTestResultDirectory = "$testResultsDirectory\MSTest"	#$vsTestExe = (Get-ChildItem ("C:\Program Files (x86)\Microsoft Visual Studio*\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe")).FullName | Sort-Object $_ | select -last 1	$buildConfiguration = "Release"	$buildPlatform = "Any CPU"}
 
 FormatTaskName "`r`n`r`n------------ Executing {0} Task ------------"
 
@@ -41,22 +41,22 @@ task Compile  -depends Init  -description "Compile the code" {
 	}
 }
 
-task TestMSTest -depends Compile -description "Run MSTest tests" -precondition { return Test-Path $publishedMSTestDiretory } -requiredVariable publishedMSTestDiretory, MSTestResultDirectory {
-	$testAssemblies = Prepare-Tests -testRunnerName "MSTest" -publishedTestsDirectory $publishedMSTestDiretory -testResultsDirectory $MSTestResultDirectory
+#task TestMSTest -depends Compile -description "Run MSTest tests" -precondition { return Test-Path $publishedMSTestDiretory } -requiredVariable publishedMSTestDiretory, MSTestResultDirectory {
+#	$testAssemblies = Prepare-Tests -testRunnerName "MSTest" -publishedTestsDirectory $publishedMSTestDiretory -testResultsDirectory $MSTestResultDirectory
 	
-	# vstest console doesn't have any option to change the output directory
-	# so we need to change the working directory
-	Push-Location  $MSTestResultDirectory
-	Exec { &$vsTestExe $testAssemblies /Logger:trx }
-	Pop-Location
+#	# vstest console doesn't have any option to change the output directory
+#	# so we need to change the working directory
+#	Push-Location  $MSTestResultDirectory
+#	Exec { &$vsTestExe $testAssemblies /Logger:trx }
+#	Pop-Location
 
-	# move the .trx file back to $MSTestResultDirectory
-	Move-Item -Path $MSTestResultDirectory\TestResults\*.trx -Destination $MSTestResultDirectory\MSTest.trx
+#	# move the .trx file back to $MSTestResultDirectory
+#	Move-Item -Path $MSTestResultDirectory\TestResults\*.trx -Destination $MSTestResultDirectory\MSTest.trx
 
-	Remove-Item $MSTestResultDirectory\TestResults
-}
+#	Remove-Item $MSTestResultDirectory\TestResults
+#}
 
-task Test -depends Compile, TestMSTest -description "Run unit tests" {
+task Test -depends Compile -description "Run unit tests" {
 	Write-Host $testMessage
 }
 
