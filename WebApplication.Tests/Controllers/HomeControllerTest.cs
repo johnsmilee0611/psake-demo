@@ -49,6 +49,7 @@ namespace WebApplication.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
+            Assert.IsTrue(false);
         }
     }
 }

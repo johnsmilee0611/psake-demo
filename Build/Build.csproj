@@ -46,6 +46,7 @@
       <Link>build.ps1</Link>
     </None>
     <None Include="default.ps1" />
+    <None Include="helpers.ps1" />
     <None Include="MsBuild\MSTestBuild.targets" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
