@@ -15,7 +15,6 @@ namespace WebApplication.Tests.Controllers
         [TestMethod]
         public void Index()
         {
-            Assert.IsTrue(false);
             // Arrange
             HomeController controller = new HomeController();
 
@@ -42,7 +41,6 @@ namespace WebApplication.Tests.Controllers
         [TestMethod]
         public void Contact()
         {
-            Assert.IsTrue(false);
             // Arrange
             HomeController controller = new HomeController();
 
