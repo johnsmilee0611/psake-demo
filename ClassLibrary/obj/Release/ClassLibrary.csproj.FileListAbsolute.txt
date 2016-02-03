@@ -5,6 +5,7 @@ C:\Users\Administrator\Desktop\RnDProjects\psake\ClassLibrary\obj\Release\ClassL
 C:\Users\Administrator\Desktop\RnDProjects\psake\ClassLibrary\obj\Release\ClassLibrary.pdb
 C:\Users\Administrator\Documents\GitHub\psake-demo\.build\temp\ClassLibrary.dll
 C:\Users\Administrator\Documents\GitHub\psake-demo\.build\temp\ClassLibrary.pdb
-C:\Users\Administrator\Documents\GitHub\psake-demo\ClassLibrary\obj\Release\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\psake-demo\ClassLibrary\obj\Release\ClassLibrary.dll
 C:\Users\Administrator\Documents\GitHub\psake-demo\ClassLibrary\obj\Release\ClassLibrary.pdb
+C:\Users\Administrator\Documents\GitHub\psake-demo\ClassLibrary\bin\Release\ClassLibrary.dll
+C:\Users\Administrator\Documents\GitHub\psake-demo\ClassLibrary\bin\Release\ClassLibrary.pdb
